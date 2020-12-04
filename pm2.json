@@ -1,0 +1,11 @@
+{
+  "apps" : [{
+    "name"        : "sleep-score-api",
+    "script"      : "./build/index.js",
+    "watch"       : false,
+    "max_memory_restart" : "400M",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
