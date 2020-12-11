@@ -20,7 +20,7 @@ const accessLogStream = rfs('access.log', {
   path: path.join(SERVER_ROOT, 'log'),
 });
 
-const app = express();
+export const app = express();
 
 // Apache commons style logging
 app.use(morgan('combined', { stream: accessLogStream }));
